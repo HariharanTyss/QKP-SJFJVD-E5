@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<parameter name="url" value="https://www.saucedemo.com/"></parameter>
+	<parameter name="username" value="standard_user"></parameter>
+	<parameter name="Password" value="secret_sauce"></parameter>
+	<groups>
+		<run>
+			<exclude name="FT"></exclude>
+		</run>
+	</groups>
+	<test thread-count="5" parallel="tests" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="LearningBatchExecution.VerifyUserAbleToAddProduct" />
+			<class name="LearningBatchExecution.VerifyUserAbleToRemoveProduct" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

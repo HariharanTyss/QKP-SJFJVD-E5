@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Functional">
+	<listeners>
+		<listener class-name="LearningListener.ListenerImplementation"></listener>
+	</listeners>
+  <test thread-count="5" name="ChromeTest">
+    <classes>
+      <class name="LearningListener.Task1"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+</suite> <!-- Suite_Functional -->
