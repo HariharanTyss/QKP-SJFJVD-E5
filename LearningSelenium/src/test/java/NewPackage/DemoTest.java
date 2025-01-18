@@ -16,6 +16,8 @@ public void demo() {
 		System.out.println("Rangareddy");
 		System.out.println("Purna");
 		System.out.println("Jaheer");
+		System.out.println("Interview bokka");
+		
 		
 	}
 >>>>>>> branch 'master' of https://github.com/HariharanTyss/QKP-SJFJVD-E5.git
