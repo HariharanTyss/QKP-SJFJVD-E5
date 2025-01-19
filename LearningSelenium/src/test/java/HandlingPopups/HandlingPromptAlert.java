@@ -1,5 +1,7 @@
 package HandlingPopups;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +26,7 @@ public class HandlingPromptAlert {
 		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
 
 		// Explicit Wait Condition To Check The Alert Is Present
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.alertIsPresent());
 
 		// Switch The Driver Control From MainPage To Alert

@@ -1,5 +1,6 @@
 package Synchronization;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -24,7 +25,7 @@ public class LearningExplicitlyWait {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		//Exlpicit Wait
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 		// Navigate To The Application
 		driver.navigate().to("https://www.shoppersstack.com/");
