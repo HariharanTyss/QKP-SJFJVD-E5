@@ -18,6 +18,7 @@ public class DemoTest {
 		System.out.println("Interview bokka");
 		System.out.println("For Test Purpose");
 		System.out.println("For Test Purpose2");
+		System.out.println("Thats Why i told i dont want to learn selenium")
 
 	}
 
